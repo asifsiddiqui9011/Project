@@ -191,7 +191,7 @@ function LoginPage() {
                             <Cktmbtn type="submit" title="Login" style={{width:"20em",height:"40px",borderRadius:"20px",fontSize:"16px"}} />
                         </form>
                         <p className="text">or</p>
-                        <GoogleOAuthProvider clientId= {process.env.VITE_GOOGLE_CLIENT_ID}>
+                        <GoogleOAuthProvider clientId="930966048669-nll664mhi690t8mqsbnp69q18ubvkk11.apps.googleusercontent.com">
                             <GoogleBtn />
                         </GoogleOAuthProvider>
                         {/* <p className="text">
