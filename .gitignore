@@ -24,6 +24,11 @@ pyserver/glove.6B.50d.txt
 # Ignore dependency directories
 bower_components/
 
+D:\sample\AiGadgets\pyserver\glove.6B.50d.txt
+
+!pyserver/glove.6B.50d.txt/
+
+pyserver/ 
 # Ignore compiled files
 *.class
 *.dll
@@ -50,3 +55,7 @@ yarn.lock
 
 # Ignore generated documentation
 docs/
+
+glove.6B.50d.txt 
+
+glove.6B.50d.txt
