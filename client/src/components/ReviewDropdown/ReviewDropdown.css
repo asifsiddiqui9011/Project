@@ -1,0 +1,122 @@
+/* ReviewDropdown.css */
+
+.review-dropdown {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 77vw;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* BlueViolet shadow */
+}
+
+.review-dropdown h2 {
+  font-size: 1.5em;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #0c0c0c;
+}
+
+.review-dropdown .down-arrow {
+  font-size: 2em;
+ 
+  margin: 0px;
+  padding: 0%;
+  color: #000000; 
+}
+
+.review-list {
+  margin-top: 20px;
+}
+
+.review-item {
+  background: #ffffff; 
+  padding: 15px;
+  border: 1px solid #D8BFD8; 
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.review-item:hover {
+  box-shadow: 0 2px 8px rgba(138, 43, 226, 0.2);
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-details img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.product-details h3 {
+  font-size: 1.2em;
+  margin: 0;
+  color:rgb(9, 7, 10); 
+}
+
+
+.review-item button {
+  width: fit-content; 
+}
+
+.review-form {
+  margin-top: 15px;
+  background: #ffffff; 
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #1f1f1f; 
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.review-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.form-buttons :last-child:hover {
+  background: rgb(12, 154, 255); 
+  color: #ffffff; 
+}
+
+
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.star-rating span {
+  transition: color 0.2s ease;
+}

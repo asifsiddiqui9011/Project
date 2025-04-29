@@ -1,0 +1,27 @@
+.c-banner {
+    background: linear-gradient(135deg, #29b6f6, #26c6da);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 90px auto;
+}
+
+.c-banner__input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.c-banner__input:focus {
+    box-shadow: 0 0 0 2px rgba(41, 182, 246, 0.5);
+}
+
+.c-banner__input::placeholder {
+    color: #888;
+}

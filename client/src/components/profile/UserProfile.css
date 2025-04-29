@@ -1,0 +1,94 @@
+.Userdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    width: 80%;
+    border-radius: 15px;
+    /* border: 5px solid black; */
+    gap: 10px;  
+    background-color:white; 
+    box-shadow:2px 2px 5px rgba(0,0,0,.2);
+    margin-top: 120px;
+} 
+
+.profileimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profileimg img {
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    /* background-color: beige; */
+} 
+
+.profilebtns {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.userdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+h2,p{
+    margin:10px;
+}
+
+.align-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+  
+  .profileimg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    width:350px;
+    box-shadow: none;
+    position: relative;
+  }
+  
+  .cancel-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+  }
+  

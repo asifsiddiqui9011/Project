@@ -1,0 +1,132 @@
+/* Base styles for Admin Login */
+.ai-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(120deg, #8A2BE2 0%, #1E90FF 50%, #27e7eb 100%);
+    padding: 10px;
+    animation: fadeIn 1.5s ease-in;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: auto;
+    height: 97vh;
+}
+
+.ai-login-title {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #6600cc, #124dfd, #f905e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.ai-login-error {
+    color: #ff8080;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.ai-login-form {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    animation: floatIn 1s ease-out;
+}
+
+.ai-login-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.ai-login-label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.ai-login-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.ai-login-input:focus {
+    box-shadow: 0 0 5px rgba(3, 169, 244, 0.8);
+}
+
+.ai-login-button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: larger;
+    transition: background 0.3s ease;
+    width: auto;
+}
+
+.ai-login-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.ai-login-success {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .ai-login-container {
+        padding: 15px;
+    }
+    .ai-login-title {
+        font-size: 2rem;
+    }
+    .ai-login-form {
+        padding: 20px;
+    }
+}

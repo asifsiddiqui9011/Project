@@ -1,0 +1,31 @@
+h1{
+    background-color: aliceblue;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+button{
+    outline: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    color: blueviolet;
+    background-color: #ffff;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 25%);
+  
+}
+
+button:hover {
+box-shadow: rgb(0 0 0 / 30%) 0px 3px 1px -2px, rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgba(0, 0, 0, 0.944) 0px 1px 5px 0px;
+}
+
+button:active{
+background-color: rgba(8, 123, 255, 0.86);
+color:white;
+border: 1px solid white
+}

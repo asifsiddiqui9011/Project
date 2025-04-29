@@ -1,0 +1,134 @@
+/* Register.css */
+
+:root {
+    --bluvoilate-primary: #8a2be2;
+    /* --bluvoilate-light: #d9b3ff; */
+    --bluvoilate-secondary: #c925ea;
+    --bluvoilate-dark: #4b0082;
+    --error-color: #ff6b6b;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+.register-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--bluvoilate-light), var(--bluvoilate-primary));
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+    /* min-height: 200px; */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.register-title {
+    text-align: center;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05rem;
+    background: linear-gradient(45deg, var(--bluvoilate-primary), var(--error-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.register-message {
+    text-align: center;
+    font-weight: bold;
+    color: var(--bluvoilate-dark);
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    flex: 0 0 30%;
+    text-align: right;
+    padding-top: 0.5rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    color: var(--bluvoilate-dark);
+}
+
+.input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input,
+.form-select {
+    padding: 0.2rem;
+    border: 2px solid var(--bluvoilate-primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.form-input:focus,
+.form-select:focus {
+    border-color: var(--bluvoilate-secondary);
+    box-shadow: 0 0 8px rgba(138, 43, 226, 0.5);
+}
+
+.error-message {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    color: var(--error-color);
+}
+
+.form-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(45deg, var(--bluvoilate-primary), var(--error-color));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.form-button:hover {
+    background-color: var(--bluvoilate-secondary);
+    transform: scale(1.02);
+}
+
+.form-button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .form-label {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+}

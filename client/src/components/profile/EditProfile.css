@@ -1,0 +1,19 @@
+.edit-p-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.edit-p-form span{
+    width: 300px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}

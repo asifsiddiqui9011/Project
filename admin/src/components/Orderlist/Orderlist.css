@@ -1,0 +1,185 @@
+/* .order-overlay{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-detail{
+  width: 1000px;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.order-items{
+    height: 100px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.item-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 5px;
+}
+ */
+
+
+/* Container for Order List */
+.orderlist-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 100px auto;
+    background-image: linear-gradient(135deg, #4298e8ae 0%, #edecee 100%);
+}
+
+.orderlist-container h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section for column titles */
+.orderlist-header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+.orderlist-header p {
+    margin: 0 5px;
+}
+
+/* Order rows */
+.orderlist-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.orderlist-row:hover {
+    background-color: #f9f9f9;
+}
+
+.orderlist-row p {
+    margin: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Styling for the select drop-down and update button */
+.orderlist-select_status {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.orderlist-button_update {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f9f9f9;
+    color: #c134ef;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.orderlist-button_update:hover {
+    background-color: #c374eb;
+    color: white;
+}
+
+/* Container for the list of orders */
+.orderlist-orders {
+    margin-top: 15px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+/* Modal (Model) Overlay */
+.orderlist-model_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease forwards;
+    z-index: 1000;
+}
+
+/* Modal Detail Container */
+.orderlist-model_detail {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.3s ease forwards;
+}
+
+/* Individual Modal Order Items */
+.orderlist-model_item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.orderlist-model_item:last-of-type {
+    border-bottom: none;
+}
+
+.orderlist-model_item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Description section in Modal */
+.orderlist-model_description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}

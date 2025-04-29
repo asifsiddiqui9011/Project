@@ -1,0 +1,111 @@
+{
+  "intents": [
+    {
+      "tag": "product_search",
+      "patterns": [
+        "Show me [brand] [product_type] under [price]",
+        "Find [product_type] with [feature]",
+        "What are the best [product_type] for [use_case]?",
+        "Compare [product1] and [product2]",
+        "Latest [product_type] released this year",
+        "Do you have [product_type] from [brand]?",
+        "Recommend [product_type] for [user_profile]",
+        "[product_type] with [spec1] and [spec2]"
+      ],
+      "examples": [
+        "Show me gaming laptops under $1500",
+        "Find wireless earbuds with noise cancellation",
+        "What are the best cameras for vlogging?",
+        "Compare iPhone 15 and Samsung Galaxy S24",
+        "Latest smartphones released in 2024",
+        "Do you have DSLR cameras from Canon?",
+        "Recommend tablets for students",
+        "Laptops with 16GB RAM and 1TB SSD"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order [order_id]?",
+        "Has my [product_name] shipped yet?",
+        "When will I get my delivery?",
+        "Track package for order [order_id]",
+        "Is my [product_type] out for delivery?",
+        "Why is my order delayed?",
+        "Update delivery address for order [order_id]"
+      ]
+    },
+    {
+      "tag": "faqs",
+      "patterns": [
+        "What is your return policy?",
+        "How long is the warranty period?",
+        "Do you offer international shipping?",
+        "What payment methods do you accept?",
+        "How to contact customer support?",
+        "Where is your return center located?",
+        "Do you price match competitors?"
+      ]
+    },
+    {
+      "tag": "cart_management",
+      "patterns": [
+        "Add [product_name] to my cart",
+        "Remove [product_name] from cart",
+        "Apply coupon code [coupon_code]",
+        "What's in my shopping cart?",
+        "Increase quantity of [product_name]",
+        "Proceed to checkout",
+        "Save cart for later"
+      ]
+    },
+    {
+      "tag": "account_issues",
+      "patterns": [
+        "I forgot my password",
+        "Update my email address",
+        "Why is my account locked?",
+        "Delete my account permanently",
+        "Change delivery preferences",
+        "Why am I not getting OTP?",
+        "My payment failed but money was deducted"
+      ]
+    },
+    {
+      "tag": "promotions",
+      "patterns": [
+        "Any ongoing sales?",
+        "Show me weekend deals",
+        "Student discount available?",
+        "Flash sale offers today",
+        "First-time user coupons",
+        "Festival season discounts",
+        "Bundle deals for [product_type]"
+      ]
+    },
+    {
+      "tag": "returns_refunds",
+      "patterns": [
+        "How do I return an item?",
+        "Initiate refund for order [order_id]",
+        "Where is my refund?",
+        "Return pickup scheduling",
+        "Item received was damaged",
+        "Wrong product delivered",
+        "Return without original packaging"
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "The app keeps crashing",
+        "Voice assistant not working",
+        "Website login issues",
+        "Payment gateway error",
+        "Page not loading properly",
+        "Search results are incorrect",
+        "Filter options are broken"
+      ]
+    }
+  ]
+}

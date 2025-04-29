@@ -1,0 +1,127 @@
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Delivery.css */
+
+.delivery-container {
+    background: linear-gradient(135deg, #efeef0, #80e2ef);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    margin: 100px auto;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Heading Styles */
+.delivery-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Sorting Controls */
+.sort-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-controls label {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.sort-controls select {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(130, 190, 250, 0.941);
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-controls select:hover {
+    background-color: rgba(130, 190, 250, 1);
+}
+
+/* Table Wrapper */
+.delivery-table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+    background-color: rgba(200, 113, 195, 0.07);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Delivery Table */
+.delivery-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.delivery-table th,
+.delivery-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.delivery-table th {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.delivery-table tr:hover {
+    background-color: rgba(241, 212, 212, 0.2);
+}
+
+.delivery-table select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Payment Status Container */
+.delivery-table td div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expanded-row {
+    overflow: hidden;
+    animation: expandAnimation 0.5s ease-out;
+}
+
+@keyframes expandAnimation {
+    0% {
+        max-height: 0;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+    60% {
+        max-height: 520px;
+        opacity: 1;
+        transform: scaleY(1.02);
+    }
+    100% {
+        max-height: 500px;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
