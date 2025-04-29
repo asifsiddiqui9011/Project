@@ -20,7 +20,7 @@ Thumbs.db
 .vscode/
 .idea/
 pyserver/venv/
-
+pyserver/glove.6B.50d.txt
 # Ignore dependency directories
 bower_components/
 
@@ -33,6 +33,7 @@ bower_components/
 
 # Ignore BERT virtual environment
 bertpy/venv/
+
 
 # Ignore coverage directory
 coverage/
