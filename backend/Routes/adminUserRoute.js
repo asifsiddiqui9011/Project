@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const adminUserController = require('../controllers/adminUserController.js');
 const authorizeRoles = require('../middleware/authorizeRoles.js').authorizeRoles;
-const authenticateUserByRole = require('../middleware/AuthenticateUserByRole.js').authenticateUserByRole;
+const authenticateUserByRole = require('../middleware/authenticateUserByRole.js').authenticateUserByRole;
 
 router.post("/admin/signup", adminUserController.signup);
 router.post("/admin/login", adminUserController.login);

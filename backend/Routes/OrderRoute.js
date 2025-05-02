@@ -1,5 +1,5 @@
 const express = require('express');
-const fetchUser = require("../middleware/fetchUser");
+const fetchUser = require("../middleware/fetchuser");
 const router = express.Router();
 const {
     orders,
