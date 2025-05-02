@@ -132,8 +132,8 @@ return (
             element={<Community/>}
           /> 
         </Routes>
-        <VoiceAssits/>
-        {/* <Footer id="foot"/> */}
+        {/* <VoiceAssits/> */}
+        <Footer id="foot"/>
     </>     
   )
 }

@@ -35,7 +35,7 @@ function NavBar() {
                 <Cktmbtn title={<Link to="/home" style={{textDecoration:"none"}}>Home</Link>} />
                 <Cktmbtn title={<Link to="home/house/living" style={{textDecoration:"none"}}>House</Link>} />
                 <Cktmbtn title={<Link to={'home/office/conference'} style={{textDecoration:"none"}}>Office</Link>} />
-                <Cktmbtn title={<Link to={'/community'} style={{textDecoration:"none"}}>Community</Link>} />
+                <Cktmbtn title={<Link to={'/community'} style={{textDecoration:"none"}}>Community</Link>} style={{width:"80px"}} />
             </div>
             <div className='iconsdiv'>
                 <div className='logindiv'>

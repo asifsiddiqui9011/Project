@@ -24,7 +24,7 @@ function SearchResult() {
                             id={item.id}
                             title={item.title}
                             price={item.price}
-                            image={item.image || item.images[0]}
+                            image={item.image || item.images[0].image_url}
                             description={item.description}
                         />
                     ))
