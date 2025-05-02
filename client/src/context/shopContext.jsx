@@ -14,7 +14,7 @@ const getDefaultWishList = () => ({});
  
 const ShopContextProvider = (props) => {
     
-    const url = "http://localhost:8080/api"
+    const url = "https://ai-gadget.onrender.com/api"
     const [allProducts,setAllProducts] = useState([]);
     const [cartItems, setCartItems] = useState(getDefaultCart());
     const [wishListItems, setWishListItems] = useState(getDefaultWishList());
