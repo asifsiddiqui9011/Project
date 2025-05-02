@@ -103,11 +103,11 @@ const Razorpay = require("razorpay");
 const { start } = require("repl");
 const instance = new Razorpay({
     
-  key_id: "rzp_test_IkQ05srWvb4TiT",
-  key_secret: "sLEt2np12zKsWavbggIFotGh",
+  key_id: "rzp_test_sa8DMo52wpFlUJ",
+  key_secret: "caynGGFKuHUgr1KHt1y2dA9u",
 });
 
-app.post("/api/create-razorpay-order", async (req, res) => {
+app.post("/create-razorpay-order", async (req, res) => {
   const options = {
     amount: req.body.amount * 100,
     currency: "INR",

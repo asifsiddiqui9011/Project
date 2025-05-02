@@ -324,7 +324,7 @@ const Payment = () => {
       throw new Error("Invalid amount");
     }
     try {
-      const response = await fetch(`${url}/create-razorpay-order`, {
+      const response = await fetch(`http://localhost:8080/create-razorpay-order`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -336,7 +336,7 @@ const Payment = () => {
       if (orderResponse && orderResponse.id) {
         return new Promise((resolve, reject) => {
           const options = {
-            key: "rzp_test_IkQ05srWvb4TiT",
+            key: "rzp_test_sa8DMo52wpFlUJ",
             amount: orderResponse.amount,
             currency: orderResponse.currency,
             name: "Ai-Gadgets",
