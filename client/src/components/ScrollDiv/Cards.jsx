@@ -26,10 +26,10 @@ function Cards(props) {
             <div className="cardPrice">
                 <h1>Rs.{props.price.toLocaleString('en-IN')}</h1>
                 <div onClick={() => setIsWishActive(!iswishActive)}>
-               {iswishActive ? <i onClick={()=>{removeFromWishList(props.id)}} className="pi pi-heart-fill" id='icons' style={{ fontSize: '2rem', }}></i> :<i onClick={()=>{addToWishList(props.id)}} className="pi pi-heart" id='icons' style={{ fontSize: '2rem' }}></i> }
+               {iswishActive ? <i onClick={()=>{removeFromWishList(props.id)}} className="pi pi-heart-fill" id='icons' ></i> :<i onClick={()=>{addToWishList(props.id)}} className="pi pi-heart" id='icons' ></i> }
                   </div>
                   <div onClick={() => setIsCartActive(!iscartActive)}>
-               {iscartActive ? <Cktmbtn   title= {<FaShoppingCart className="carticon"/>} style={{width:"45px", height:"40px"}}/> :<Cktmbtn title={<i onClick={()=>{addToCart(props.id)}} className="pi pi-shopping-cart" id='icons' style={{ fontSize: '2rem' }}></i>} style={{width:"45px", height:"40px"}} /> }
+               {iscartActive ? <i id="icons"><FaShoppingCart className="carticon"/></i> :<i onClick={()=>{addToCart(props.id)}} className="pi pi-shopping-cart" id='icons' ></i>}
                   </div>
             </div>
         </div> 

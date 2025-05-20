@@ -54,7 +54,7 @@ function CatogryBtns(props) {
             <div className="CatogryBtnDiv">
                 <Link to="../home/house/living">
                     <div onClick={ () => {setMenu("living")}}>
-                      <Catbtn onClick={ () => {setBanner(living)}} iconn={<GiSofa style={{fontSize:"60px", color:"#F7418F"}}/>} ></Catbtn>
+                      <Catbtn onClick={ () => {setBanner(living)}} iconn={<GiSofa style={{fontSize:"60px", color:"#F7418F"}} />} ></Catbtn>
                       {menu==="living"?<hr id="hrbottom"/>:<></>}
                     </div>
                 </Link>

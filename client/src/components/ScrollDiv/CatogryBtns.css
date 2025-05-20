@@ -1,8 +1,9 @@
 .CatogryBtnDiv {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
-    gap: 50px;
+    width: 45vw;
+    
 }
 
 .BtnsCards{
@@ -19,8 +20,8 @@
     background-color: #f74190a1;
 }
 
-/* .HomeImg, .category-banner{
-    height: 100vh;
-    width: 240vh;
-} */
-
+@media(max-Width:768px){
+    .CatogryBtnDiv{
+        width: 90vw;
+    }
+}

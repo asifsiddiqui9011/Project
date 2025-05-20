@@ -51,6 +51,7 @@ const Order = () => {
   const { userData } = useContext(ShopContext);
   const [order, setOrder] = useState([]);
   const [showOrders, setShowOrders] = useState(false);
+  console.log(order,"order");
 
   useEffect(() => {
     if (userData.Order) {
@@ -90,6 +91,8 @@ const Order = () => {
                   orderDate={e.orderDate}
                   expectedDate={e.expectedDate}
                   status={e.Status}
+                  paymentStatus={e.Payment.status}
+
                 />
               </div>
             ))

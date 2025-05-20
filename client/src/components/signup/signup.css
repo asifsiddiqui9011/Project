@@ -60,6 +60,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 
 .from_heading {
@@ -70,7 +71,7 @@
 }
 
 .input {
-    width: 320px;
+    width:320px;
     height: 35px;
     padding: 5px;
     margin: 5px 0;
@@ -79,7 +80,7 @@
     border-bottom: 2px solid #2c444e;
     border-radius: 2px;
     font-size: 16px;
-}
+} 
 
 
 .text {
@@ -94,6 +95,7 @@
     font-size: 18px;
     font-weight: 500;
     color: #0940f6;
+    text-align: center;
 }
 
 
@@ -120,6 +122,29 @@
     gap: 100px;
  }
 
- .CrossIcon{
-    margin:-10px 0 50px;;
+ /* .CrossIcon{
+    
+ } */
+ .signup-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px ;
+ }
+
+
+ .signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ @media (max-width:768px) {
+
+    .signupleft{
+        display: none;
+    }
+    
  }

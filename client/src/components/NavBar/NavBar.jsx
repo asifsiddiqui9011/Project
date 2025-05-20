@@ -11,6 +11,9 @@ import logo from "../Assests/new-logo.png";
 function NavBar() {
     const { getTotalCartItems, userData } = useContext(ShopContext);
     const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+
 
     useEffect(() => {
       const handleScroll = () => {
@@ -29,7 +32,7 @@ function NavBar() {
         <>
         <nav className={`navigationBar ${scrolled ? "scrolled" : ""}`}>
             <div>
-                <img className='logo' src={logo} alt="" />
+                <img className='logo' src={logo} alt="" onClick={() => setIsOpen(!isOpen)} />
             </div>
             <div className='homebtns'>
                 <Cktmbtn title={<Link to="/home" style={{textDecoration:"none"}}>Home</Link>} />
@@ -37,34 +40,34 @@ function NavBar() {
                 <Cktmbtn title={<Link to={'home/office/conference'} style={{textDecoration:"none"}}>Office</Link>} />
                 <Cktmbtn title={<Link to={'/community'} style={{textDecoration:"none"}}>Community</Link>} style={{width:"80px"}} />
             </div>
+            <div className={`sidebar ${isOpen ? "open" : ""}`}>
+                    <button className="close-btn" onClick={() => setIsOpen(false)}>X</button>
+                    <Link to="/home">Home</Link>
+                    <Link to="/home/house/living">House</Link>
+                    <Link to="/home/office/conference">Office</Link>
+                    <Link to="/community">Community</Link>
+                </div>
+
             <div className='iconsdiv'>
                 <div className='logindiv'>
                     <SearchBar placeholder="Type here to search?"/>
                     <Link to="home/wishlist">
-                        <Cktmbtn title={<i className="pi pi-heart" id='icons' style={{ fontSize: '2rem' }}></i>} style={{width:"45px", height:"40px"}} />
+                        <button className="cart-btn"><i className="pi pi-heart" id='icons' ></i></button>
                     </Link>
                     <div className="cart-counter-div">
                         <Link to={'home/cart'}>
-                            <Cktmbtn title={<FaShoppingCart className="carticon"/>} style={{width:"45px", height:"40px"}}/>
+                            <button  className="cart-btn" ><FaShoppingCart className="carticon"/></button>
                         </Link>
                         <div className="cart-counter">{getTotalCartItems()}</div>
                     </div>
                     {localStorage.getItem('auth-token')?
                         <Link to={'home/UserProfile'}>
-                            <Cktmbtn 
-                              style={{
-                                borderRadius:"50%",
-                                height:"50px",
-                                width:"50px",
-                                backgroundImage:`url(${userData.profileImage ? userData.profileImage : background})`,
-                                backgroundSize:"cover",
-                                backgroundRepeat: "no-repeat"
-                              }} 
-                              className="DP" 
-                            />
+                             <div className="DP" >
+                                <img src={userData.profileImage ? userData.profileImage : background} alt="" />
+                            </div>
                         </Link>
                     :
-                        <Cktmbtn title={<Link to="/login" style={{textDecoration:"none"}}>Login</Link>} />
+                        <button className="login-btn" ><Link to="/login" style={{textDecoration:"none"}}>Login</Link></button>
                     }
                 </div>
             </div>

@@ -158,8 +158,8 @@
 }
 
 .productimages {
-    height: 500px;
-    width: 100px;
+    /* height: 500px;
+    width: 100px; */
     transition: transform 0.3s ease;
 }
 
@@ -217,4 +217,28 @@
 
 .ProductReview {
     height: fit-content;
+}
+
+
+
+@media(max-width:768px){
+   .product_img{
+    height: fit-content;
+    gap: 0px;
+   }
+
+   #largeimg{
+    height: 250px;
+    width: 250px;
+   }
+
+   #miniimg{
+    height: 45px;
+    width: 45px;
+    padding: 2px;
+   }
+
+   .ProductDesc{
+    flex-wrap: wrap;
+   }
 }

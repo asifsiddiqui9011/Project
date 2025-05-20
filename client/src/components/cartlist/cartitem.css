@@ -79,3 +79,30 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     cursor: pointer;
 }
+
+
+
+@media(max-width:768px){
+    .cartimgdiv{
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+    }
+
+    .cartdesc{
+        font-size: smaller;
+    }
+
+    p h2 h1{
+        margin: 2px;
+    }
+
+    .cartprice{
+        margin-left: -100px;
+        padding-left: 20px;
+    }
+    .cartdiv{
+        height: fit-content;
+    }
+    
+}

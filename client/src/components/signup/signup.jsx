@@ -84,6 +84,7 @@ import GoogleBtn from "../login/GoogleLoginBtn";
 import { ImCross } from "react-icons/im";
 import { useContext, useState } from "react";
 import { ShopContext } from "../../context/shopContext";
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function Signup() {
 	
@@ -167,7 +168,7 @@ function Signup() {
 					<h2 className="from_heading">Create Account </h2>
 						<Link to="/home"><ImCross className="CrossIcon"/></Link>  
 					</div>
-					<form onSubmit={signup}>
+					<form onSubmit={signup} className="signup-form">
 						<input
 							name="username"
 							value={signupData.username}
@@ -217,11 +218,17 @@ function Signup() {
 							title="Password must be at least 8 characters long, include one uppercase letter, one lowercase letter, one number, and one special character"
 						/>
 						{errors.password && <span className="error">{errors.password}</span>}
-						<Cktmbtn type="submit" title="Signup" style={{width:"20em",height:"40px",fontSize:"16px",borderRadius:"20px"}} />
+						<div className="signup-button-container">
+                       <Cktmbtn type="submit" title="Signup" style={{width:"20em",height:"40px",fontSize:"16px",borderRadius:"20px"}} />
+					   <p className="text">or</p>
+					   <GoogleOAuthProvider clientId="930966048669-nll664mhi690t8mqsbnp69q18ubvkk11.apps.googleusercontent.com">
+                            <GoogleBtn />
+                        </GoogleOAuthProvider>
+						</div>
+						
 					</form>
 					
-					<p className="text">or</p>
-					<GoogleBtn/>
+					
 					<p className="text">
 						Already Have Account ? <Link to="/login">Log In</Link>
 					</p>

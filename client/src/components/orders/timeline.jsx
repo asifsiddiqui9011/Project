@@ -16,7 +16,7 @@ export function Line (props){
     )
 }
 
-export const MyTimeline = ({Status}) => {
+export const MyTimeline = ({Status,paymentStatus}) => {
   const [status,setStatus] = useState('')
 
   useEffect(()=>{
@@ -56,7 +56,7 @@ export const MyTimeline = ({Status}) => {
                   icon={<RiTruckFill/>} />
           : <Line tag={"Delivered"} icon={<RiTruckFill/>} />
         }
-        { status === 'payment'
+        { paymentStatus === 'paid' || paymentStatus === 'Paid'
           ? <Line style={{borderRadius:"0px 15px 15px 0px",backgroundColor:"rgba(169, 19, 238, 0.903)"}}
                   iconStyle={{border:"1px solid rgba(169, 19, 238, 0.9)", color:"rgba(169, 19, 238, 0.903)"}}
                   tagStyle={{color:"rgba(169, 19, 238, 0.903)"}}

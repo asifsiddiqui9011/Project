@@ -273,7 +273,7 @@ function ProductDesc(props) {
                             id="largeimg" 
                         /> 
                     </div>
-                    <div className="ProductReview">
+                    {/* <div className="ProductReview">
                         <div>
                             <h2>Reviews</h2>
                             <hr />
@@ -281,9 +281,9 @@ function ProductDesc(props) {
                                 return <Review key={i} name={e.user.name} profileImage={e.user.profileImage} review={e.review} rating={e.rating}/>
                             })}
                             <Review name={"John Doe"}/>
-                            <Review name={"sky walker"}/>
+                            <Review name={"sky walker"}/> 
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="productDetails">
                     <h1>{product.title}</h1>
@@ -358,7 +358,6 @@ function ProductDesc(props) {
 
                 </div>
             </div>
-
             <h2>Related Products</h2>
             <hr /><br />
             <RelatedProduct category={product.category}/>

@@ -44,3 +44,43 @@ h3{
     text-decoration: none;
     color: black;
 }
+
+
+@media(max-width:765px){
+    .wishcard{
+        height: 300px;
+        width: 160px;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .wishcardimg img{
+       height: 150px;
+       width: 160px;
+    }
+
+    .description{
+        height: 100px;
+        width: inherit;
+        font-size: small;
+    }
+
+    .description p{
+        margin: 2px;
+    }
+
+    .wishcardPrice{
+        width: inherit;
+        font-size:10px;
+        padding: 2px;
+        margin: 5px 2px;
+    }
+
+    .wishcardPrice h1{
+        margin: 2px;
+    }
+
+    #icons{
+        font-size: 1.5rem;
+    }
+}

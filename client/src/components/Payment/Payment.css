@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
@@ -143,4 +143,22 @@
     height: 4px;
     background: linear-gradient(90deg, #5a189a, #e0aaff);
     border-radius: 2px;
+}
+
+
+@media (max-width:768px){
+    .payment-details{
+        width: 200px;
+    }
+
+    .payment-details button{
+        width: 200px;
+    }
+
+    .payment-container{
+        padding: 2px;
+    }
+    .order-summary{
+        height: fit-content;
+    }
 }

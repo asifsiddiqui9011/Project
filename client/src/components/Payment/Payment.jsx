@@ -428,7 +428,7 @@ const Payment = () => {
         <Cktmbtn
           onClick={handlePlaceOrderClick}
           title="Place Order"
-          style={{ width: "35em" }}
+          style={{ width: "25em" }}
         />
       </div>
       <div className="order-summary">

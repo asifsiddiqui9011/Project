@@ -22,4 +22,25 @@
     box-shadow: 2px 2px 0 1px rgb(0 0 0 / 20%);
     height: 29px;
     border-radius: 0 15px 15px 0; 
+    font-size:28px;
    } 
+
+   .pi-search{
+      font-size: '1.8rem';
+   }
+
+   @media (max-width:768px){
+      .searchinput{
+        height: 26px;
+        width: 130px;
+      }
+
+      .searchbar{
+        height: 30px;
+      }
+
+      #searchicon{
+        height: 20px;
+        font-size: 20px;
+      }
+   }

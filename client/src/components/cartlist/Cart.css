@@ -42,3 +42,12 @@
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0,0, 0.1);
 }
+
+@media (max-width:768px) 
+{
+    .cartlist{
+        padding: 5px;
+        margin-top: 50px;
+    }
+    
+}

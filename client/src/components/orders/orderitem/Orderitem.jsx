@@ -4,7 +4,7 @@ import {MyTimeline} from "../timeline.jsx"
 import { useContext, useEffect, useState } from "react"
 import { ShopContext } from "../../../context/shopContext.jsx"
 
-function Orderitem ({id,add,items,total,subTotal,orderDate,expectedDate,status}) {
+function Orderitem ({id,add,items,total,subTotal,orderDate,expectedDate,status,paymentStatus}) {
     
 
     const {url} = useContext(ShopContext);
@@ -76,7 +76,7 @@ function Orderitem ({id,add,items,total,subTotal,orderDate,expectedDate,status})
                     <b>Address :- </b> {x.houseNO} {x.city} {x.locality} {x.zipCode}
                 </p>
             </div>
-            <MyTimeline Status={`${status}`} />
+            <MyTimeline Status={`${status}`} paymentStatus={paymentStatus} />
             {status !== "cancelled" && (
                 <Cktmbtn
                     title={'CANCEL ORDER'}

@@ -29,7 +29,7 @@ function SearchBar(props) {
             {/* <button type="submit" id='searchicon' style={{ fontSize: '1.8rem' }}>
                 <i className="pi pi-search"></i>
             </button> */}
-            <i type="submit" className="pi pi-search" id='searchicon' style={{ fontSize: '1.8rem' }}></i>
+            <i type="submit" className="pi pi-search" id='searchicon' ></i>
         </form>
     );
 }
