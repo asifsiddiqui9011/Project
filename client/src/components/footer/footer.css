@@ -39,3 +39,17 @@
 .details h3{
     color: white;
 }
+
+
+@media (max-width:768px) {
+    
+    .details{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .details{
+        font-size: small;
+    }
+}

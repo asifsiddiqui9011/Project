@@ -18,16 +18,16 @@ function Footer() {
                 </div>
                 <h3>Gadgets Engineered with Ai</h3>
                 
-                <div className="contactus">
-                      <h3>Contact Us</h3>
-                      <ul>
-                        <li>Lucknow</li>
-                        <li>whatsapp</li>
-                        <li>Instagram</li>
-                        <li>+919867954585</li>
-                      </ul>
+                <div >
+                    <h3>Contact Us</h3>
+                    <ul>
+                    <li>Lucknow</li>
+                    <li>whatsapp</li>
+                    <li>Instagram</li>
+                    <li>+919867954585</li>
+                    </ul>
                 </div>
-                <div className="categories">
+                <div >
                     <h3>Categories</h3>
                     <ul>
                         <li>House</li>
@@ -35,7 +35,7 @@ function Footer() {
                         <li>Medical tools(soon)</li>
                     </ul>
                 </div>
-                <div className="aboutus">
+                <div >
                     <h3>About Us</h3>
                     <ul>
                         <li>Ai-gadgets</li>

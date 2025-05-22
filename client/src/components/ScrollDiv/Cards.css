@@ -48,14 +48,14 @@
 @media(max-width:765px){
     .CardsDiv{
         height: 300px;
-        width: 160px;
+        width: 150px;
         margin: 2px;
         padding: 2px;
     }
 
     .cardimg img{
        height: 150px;
-       width: 160px;
+       width: 150px;
     }
 
     .Cardsinfo{
@@ -80,6 +80,6 @@
     }
 
     #icons{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
