@@ -4,7 +4,7 @@
 import React, { useContext, useState } from 'react';
 import './CBanner.css';
 import bannerImage from '../../../assets/community banner.png';
-import { ShopContext } from '../../../context/ShopContext';
+import { ShopContext } from '../../../context/shopContext';
 
 const CBanner = ({ handleSetProduct = () => {} }) => {
     const { allProducts } = useContext(ShopContext);
